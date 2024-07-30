@@ -39,7 +39,8 @@ will replace the html elements from index.html file
 # Component composition
 1. put one component inside another 
 2. e.g: 
-    ```const Title = () => <h1>Title</h1>
+    ```javascript
+    const Title = () => <h1>Title</h1>
     const MainComp = () => {
         return (
             <Title /> // {Title()}
