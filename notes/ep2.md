@@ -45,7 +45,8 @@ will replace the html elements from index.html file
             <Title /> // {Title()}
             <h2 className="desc">Description </h2>
         )
-    }```
+    }
+    ```
 
 # cross site scripting(XSS):
 1. It is a web security vulnerability that allows an attracker to compromise the interactions that users have with a vulnerable application.
