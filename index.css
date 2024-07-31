@@ -54,6 +54,11 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
+.res-name {
+    font-size: 20px;
+    color: #948787;
+    font-weight: bold;
+}
 
 .search-container {
     text-align: center;
