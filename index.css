@@ -34,10 +34,14 @@
 
 .resCard-container {
     width: 226px;
-    height: 286px;
     border: 1px solid black;
-    padding: 6px;
+    padding: 10px;
     margin: 8px;
+}
+
+.resCard-container:hover {
+    border: 2px solid #8cd2db;
+    cursor: pointer;
 }
 
 .resCard-img {
