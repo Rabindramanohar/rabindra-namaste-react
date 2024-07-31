@@ -1,10 +1,4 @@
-import React  from "react";
-import ReactDOM from "react-dom/client"
-
-const heading = React.createElement("h1", {id: "heading"}, "Namaste React");
-const root = ReactDOM.createRoot(document.getElementById("root"));
-
-const resObj = [
+export const resObj = [
     {
       "info": {
         "id": "524522",
@@ -1898,73 +1892,3 @@ const resObj = [
       }
     }
   ]
-
-const styleResName = {
-    fontSize: "20px",
-    color: "#948787",
-    fontWeight: "bold"
-}
-
-const AppLayout = () => {
-    return (
-        <>
-        <Header />
-        <Body />
-        </>
-    )
-}
-
-const Header = () => {
-    return (
-        <div className="header-container">
-            <div className="logo-container">
-                <img className="logo" src="https://seeklogo.com/images/F/food-logo-59E5A73AFD-seeklogo.com.png" alt="food-logo" />
-            </div>
-            <div className="nav-items">
-                <ul>
-                    <li>Home</li>
-                    <li>About us</li>
-                    <li>contact us</li>
-                    <li>cart</li>
-                </ul>
-            </div>
-        </div>
-    )
-}
-
-const Search = () => {
-    return (
-        <div className="search-container">Search</div>
-    )
-}
-
-const Body = () => {
-    return (
-        <>
-            <Search />
-            <div className="res-container">
-                {resObj.map(item => {
-                    const resObj = item.info
-                    return <RestaurantCard key={resObj.id} data={resObj} />
-                })}
-                
-            </div>
-        </>
-    )
-}
-
-const RestaurantCard = ({data}) => {
-    const {name, cloudinaryImageId, areaName, costForTwo, cuisines, avgRating} = data;
-    return (
-        <div className="resCard-container">
-            <img className="resCard-img" src={`https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/${cloudinaryImageId}`} alt="res-food" />
-            <div style={styleResName} className="res-name">{name}</div>
-            <h4>{areaName}</h4>
-            <h4>{costForTwo}</h4>
-            <h5>{avgRating} rating</h5>
-            <h6>{cuisines.join(",")}</h6>
-        </div>
-    )
-}
-
-root.render(<AppLayout />);
