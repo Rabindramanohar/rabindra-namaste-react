@@ -61,3 +61,14 @@
 ### Spinner Loading
 
 Spinner loading involves displaying a spinner or loading indicator while the data is being fetched. This method is simpler but may not be as visually engaging as skeleton loading.
+
+# hook:
+
+### useEffect
+
+The useEffect hook in React is used to perform side effects in functional components. Side effects are operations that affect something outside the scope of the function being executed, such as data fetching, subscriptions, or manually changing the DOM. useEffect serves a similar purpose to lifecycle methods like componentDidMount, componentDidUpdate, and componentWillUnmount in class components.
+
+# input tag:
+
+- In React input behaves differently unlike html to sink with input field value when need to use event onChange and update the DOM efficiently.
+- read more on react form

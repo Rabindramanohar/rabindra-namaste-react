@@ -78,3 +78,22 @@
     padding: 10px;
     margin: 8px;
 }
+
+.account {
+    padding: 0 18px;
+}
+
+.search-container {
+    padding: 0 10px;;
+    margin: 10px;
+}
+
+.search-btn {
+    padding: 0 10px;
+    margin: 10px;
+}
+
+.filter-btn {
+    padding: 0 10px;
+    margin: 10px;
+}
