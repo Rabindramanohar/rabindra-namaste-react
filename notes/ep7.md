@@ -84,3 +84,19 @@ React Router v6 is a powerful library for handling routing in React applications
 
 In React Router v6, nested routes (children routes) are set up by defining routes within a parent route. This allows for more modular and hierarchical routing structures, where child routes inherit the path from their parent routes.
 e.g: refer header component
+
+# Dynamic route:
+
+Dynamic routing in React Router v6 allows you to create flexible and responsive applications. By defining routes with dynamic segments and accessing those segments using the useParams hook, you can easily build applications that respond to user input and data changes. This approach is particularly useful for applications that need to display details for specific items, such as each restaurant menus.
+
+# graphQL:
+
+Unlike REST, GraphQL allows clients to specify exactly what data they need, which can reduce the amount of data transferred and simplify the management of that data.
+
+## Key Concepts in Frontend GraphQL
+
+- Query: Request specific data from the GraphQL server.
+- Mutation: Send data to the server to create, update, or delete records.
+- Subscription: Subscribe to real-time data updates.
+- Client Libraries: Tools like Apollo Client help manage GraphQL requests and state management.
+- It helps with overfetching of data.

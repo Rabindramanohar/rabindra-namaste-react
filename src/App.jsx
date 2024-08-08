@@ -6,6 +6,7 @@ import Body from "./Components/Body";
 import About from "./Components/About";
 import Contact from "./Components/Contact";
 import ErrorPage from "./Components/ErrorPage";
+import RestaurantMenu from "./Components/RestaurantMenu";
 
 const heading = React.createElement("h1", { id: "heading" }, "Namaste React");
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
       {
         path: "contact",
         element: <Contact />,
+      },
+      {
+        path: "restaurant/:resId",
+        element: <RestaurantMenu />,
       },
     ],
     errorElement: <ErrorPage />,
